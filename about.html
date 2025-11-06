@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Nutritionist</title>
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/about.css" />
 </head>
 
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="logo">Nutritionist</div>
     <nav>
@@ -15,29 +18,140 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="team.html">Team</a></li>
+        <li><a href="#">Process</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="about-hero">
-      <h1>Our Mission to Promote Healthy Living</h1>
-      <p>We believe that balanced nutrition is the foundation of a fulfilling life.</p>
+  <main id="main">
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to Nutritionist</h1>
+        <p>Your trusted source for personalized nutrition coaching.</p>
+        <p>
+          Our mission is to help you achieve your weight loss and health goals through tailored nutrition plans and expert guidance. 
+          We understand that every individual is unique, and that’s why we believe in providing personalized solutions that fit your lifestyle and preferences.
+        </p>
+      </div>
     </section>
 
-    <section class="about-content">
-      <h2>Who We Are</h2>
-      <p>At Nutritionist, we empower individuals to embrace healthier lifestyles through personalized diet planning and professional guidance.</p>
+    <!-- ===== ABOUT TEXT SECTION ===== -->
+    <section class="intro">
+      <div class="container">
+        <p>
+          With our team of qualified nutritionists and dietitians, we are dedicated to empowering you with the knowledge and tools you need to make lasting changes. 
+          Whether you want to shed those extra pounds, improve your overall well-being, or develop a healthier relationship with food, we are here to support you every step of the way.
+        </p>
+        <p>
+          At Nutritionist, we believe that healthy eating should be enjoyable and sustainable. We emphasize the importance of balanced nutrition, focusing on whole foods and mindful eating practices. 
+          Our approach is rooted in scientific research and evidence-based strategies, ensuring that you receive the most up-to-date and accurate information.
+        </p>
+        <p>
+          Join our community of individuals committed to transforming their lives through nutrition. Take control of your health, boost your energy levels, and discover the joy of nourishing your body with wholesome foods. 
+          We are here to guide you towards a healthier, happier you.
+        </p>
+      </div>
+    </section>
 
-      <h2>Our Philosophy</h2>
-      <p>Our team combines science, empathy, and innovation to help you achieve your goals sustainably.</p>
+    <!-- ===== OUR STORY ===== -->
+    <section class="story">
+      <h2>Our Story</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">July 1, 2025</div>
+          <h3>Inspiring Transformations</h3>
+          <p>
+            Nutritionist continues to empower individuals to transform their lives through personalized nutrition coaching. 
+            With an expanding client base and a growing team of experts, our journey of inspiring transformations continues one client at a time.
+          </p>
+        </div>
 
-      <div class="about-img">
-        <img src="images/healthy food.jpg" alt="Healthy food variety" />
+        <div class="timeline-item">
+          <div class="timeline-date">March 10, 2023</div>
+          <h3>Recognition & Accolades</h3>
+          <p>
+            Our innovative approach and dedication to client success earned us recognition as a leading provider of personalized nutrition coaching.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">November 2, 2021</div>
+          <h3>Continued Growth</h3>
+          <p>
+            Nutritionist celebrated serving over 5,000 clients, a testament to our commitment to helping individuals achieve their goals and improve their well-being.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">July 15, 2019</div>
+          <h3>Collaborating for Success</h3>
+          <p>
+            We partnered with renowned health professionals, including dietitians and wellness experts, to deliver the highest quality guidance to our clients.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">January 1, 2010</div>
+          <h3>The Inception</h3>
+          <p>
+            Founded by Sarah Mitchell, Nutritionist began with the vision of helping individuals achieve sustainable healthy living through personalized nutrition coaching.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPANY ACHIEVEMENTS ===== -->
+    <section class="achievements">
+      <h2>Company Achievements</h2>
+      <div class="achievements-grid">
+        <div class="card">
+          <h3>10,000+ Transformations</h3>
+          <p>
+            Our personalized nutrition plans have helped thousands of individuals reach their weight loss goals and maintain a healthy lifestyle.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Recognition for Excellence</h3>
+          <p>
+            Nutritionist has been recognized as a leading provider of personalized nutrition coaching, 
+            receiving accolades for our innovative approach and commitment to success.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Positive Client Reviews</h3>
+          <p>
+            We have received numerous testimonials from satisfied clients who have experienced 
+            significant improvements in their health and well-being through our coaching program.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Collaboration with Experts</h3>
+          <p>
+            We’ve established partnerships with respected nutritionists and dietitians to ensure the highest quality support for our clients.
+          </p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <h3>We Are Proud of Our Achievements</h3>
+        <p>
+          Our greatest satisfaction comes from seeing our clients achieve their goals and live healthier, happier lives. 
+          Join Nutritionist today and embark on your own transformative journey.
+        </p>
+        <a href="#" class="btn">Book a Demo</a>
       </div>
     </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <p>hello@squareup.com | +91 91813 23 2309 | Somewhere in the World</p>
     <p>© 2023 Nutritionist. All rights reserved.</p>
