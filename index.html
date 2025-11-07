@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -22,26 +22,29 @@
 
   <!-- Header -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="container header-inner"> 
       <a href="index.html" class="brand">
-        <img src="images/logo.svg" alt="Nutritionist logo" width="140" height="32">
+        <img src="images/Logo.png" alt="Nutritionist logo" width="140" height="32">
       </a>
+      
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
 
       <nav id="site-nav" class="site-nav" aria-label="Main Navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-        <a href="#contact" class="btn btn-nav">Contact Us</a>
-      </nav>
+  <ul class="nav-list">
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <!-- Make the button go to the Contact page from anywhere -->
+  <a href="contact.html" class="btn btn-nav">Contact Us</a>
+</nav>
     </div>
   </header>
 
@@ -50,8 +53,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-image">       
-           <img src="images/head image.png" alt="">
-          <div class="img-placeholder" aria-hidden="true"></div>
+           <img src="images/head image.png" alt="picture of a women pointing">
           
         </div>
         <div class="hero-content">
@@ -83,6 +85,7 @@
 
         <div class="features-grid">
           <article class="feature-card">
+            
             <div class="feature-icon" aria-hidden="true">🌿</div>
             <div>
               <h3>Personalized Nutrition Plans</h3>
@@ -91,6 +94,7 @@
           </article>
 
           <article class="feature-card">
+
             <div class="feature-icon" aria-hidden="true">🎓</div>
             <div>
               <h3>Guidance from Certified Nutritionists</h3>
@@ -99,6 +103,7 @@
           </article>
 
           <article class="feature-card">
+
             <div class="feature-icon" aria-hidden="true">🍽</div>
             <div>
               <h3>Food Tracking and Analysis</h3>
@@ -107,6 +112,7 @@
           </article>
 
           <article class="feature-card">
+
             <div class="feature-icon" aria-hidden="true">📒</div>
             <div>
               <h3>Meal Planning and Recipes</h3>
@@ -115,6 +121,7 @@
           </article>
 
           <article class="feature-card">
+
             <div class="feature-icon" aria-hidden="true">💪</div>
             <div>
               <h3>Lifestyle and Behavior Coaching</h3>
@@ -123,6 +130,7 @@
           </article>
 
           <article class="feature-card">
+
             <div class="feature-icon" aria-hidden="true">🧠</div>
             <div>
               <h3>Nutritional Education and Workshops</h3>
@@ -144,7 +152,7 @@
           <article class="blog-card">
             <div class="blog-media">
               <!-- <img src="images/blog-hydration-960.jpg" alt="Woman drinking water"> -->
-              <div class="img-placeholder" aria-hidden="true"></div>
+              <img src="images/hydration.png" alt="picture of a girl drinking water">
             </div>
             <div class="blog-body">
               <span class="badge">Weight Loss</span>
@@ -152,7 +160,8 @@
               <p class="blog-excerpt">Discover how staying hydrated can support your weight loss goals and improve overall health.</p>
               <div class="blog-meta">
                 <div class="author">
-                  <!-- <img src="images/author-emily.jpg" alt="Emily Johnson" width="28" height="28"> -->
+                  <img src="images/cold.png" alt=""width="50" height="32">
+                  
                   <span>Emily Johnson</span>
                 </div>
                 <div class="meta-right">
@@ -166,7 +175,7 @@
           <article class="blog-card">
             <div class="blog-media">
               <!-- <img src="images/blog-mindful-960.jpg" alt="Girl with apple and burger"> -->
-              <div class="img-placeholder" aria-hidden="true"></div>
+              <img src="images/apple vs burger.png" alt="picture of a girl wondering between apple and burger"width="1000" height="400">
             </div>
             <div class="blog-body">
               <span class="badge">Mindful Eating</span>
@@ -174,7 +183,7 @@
               <p class="blog-excerpt">Learn how mindful eating can help you build a healthier relationship with food.</p>
               <div class="blog-meta">
                 <div class="author">
-                  <!-- <img src="images/author-sarah.jpg" alt="Sarah Thompson" width="28" height="28"> -->
+                  <img src="images/black and white.png" alt="woman sitting on bench"width="50" height="32">
                   <span>Sarah Thompson</span>
                 </div>
                 <div class="meta-right">
@@ -188,7 +197,7 @@
           <article class="blog-card">
             <div class="blog-media">
               <!-- <img src="images/blog-macros-960.jpg" alt="Two women with food choices"> -->
-              <div class="img-placeholder" aria-hidden="true"></div>
+              <img src="images/hmmmm.png" alt="picture of two women wondering">
             </div>
             <div class="blog-body">
               <span class="badge">Understanding Macronutrients</span>
@@ -196,7 +205,8 @@
               <p class="blog-excerpt">Get a comprehensive understanding of macronutrients and their role in your diet.</p>
               <div class="blog-meta">
                 <div class="author">
-                  <!-- <img src="images/author-mark.jpg" alt="Mark Wilson" width="28" height="28"> -->
+                  <img src="images/texting.png" alt=""width="50" height="32">
+    
                   <span>Mark Wilson</span>
                 </div>
                 <div class="meta-right">
@@ -210,7 +220,7 @@
           <article class="blog-card">
             <div class="blog-media">
               <!-- <img src="images/blog-snacks-960.jpg" alt="Healthy and unhealthy snacks top view"> -->
-              <div class="img-placeholder" aria-hidden="true"></div>
+              <img src="images/fries.png" alt="picture of junk and healthy food">
             </div>
             <div class="blog-body">
               <span class="badge">Healthy Snacks on the Go</span>
@@ -218,7 +228,7 @@
               <p class="blog-excerpt">Explore convenient and healthy snack ideas to keep you fueled throughout the day.</p>
               <div class="blog-meta">
                 <div class="author">
-                  <!-- <img src="images/author-emily.jpg" alt="Emily Johnson" width="28" height="28"> -->
+                  <img src="images/red dress.png" alt="woman smiling"width="50" height="32">
                   <span>Emily Johnson</span>
                 </div>
                 <div class="meta-right">
@@ -339,7 +349,7 @@
     <div class="footer-bar">
       <div class="container footer-grid">
         <a href="index.html" class="brand">
-          <img src="images/logo.svg" alt="Nutritionist" width="140" height="32" />
+          <img src="images/Logo.png" alt="Nutritionist" width="140" height="32" />
         </a>
 
  <footer class="site-footer" role="contentinfo">
@@ -351,6 +361,7 @@
 
         <nav class="footer-nav" aria-label="Footer">
           <ul>
+            <a href="#top" class="to-top" aria-label="Go to top">↑</a>
             <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="team.html">Team</a></li>
@@ -359,7 +370,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <a href="#top" class="to-top" aria-label="Go to top">↑</a>
+        
       </div>
       <div class="container copyline">© 2023 Nutritionist. All rights reserved.</div>
     </div>

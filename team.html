@@ -1,145 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Team - Nutritionist</title>
-  <link rel="stylesheet" href="css/team.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team — Nutritionist</title>
+  <meta name="description" content="Meet our certified nutritionists and leadership team behind Nutritionist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-  <a href="#main" class="skip-link">Skip to content</a>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <div class="logo">Nutritionist</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="team.html" class="active">Team</a></li>
-        <li><a href="#">Process</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Top banner -->
+  <div class="top-banner" role="note">Join Our Personalized Nutrition Demo For Free</div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/Petals.svg" alt="Nutritionist logo" width="140" height="32" />
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html" aria-current="page">Team</a></li>
+          <li><a href="index.html#process">Process</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+        </ul>
+        <a class="btn btn-primary btn-small" href="index.html#contact">Contact Us</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <!-- ===== HERO SECTION ===== -->
+    <!-- Team hero -->
     <section class="team-hero">
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <h1>Meet Our Team of Experts</h1>
-        <p>Our certified nutritionists and dietitians are dedicated to helping you achieve your health and wellness goals through expert guidance and personalized plans.</p>
-      </div>
-    </section>
-
-    <!-- ===== TEAM MEMBERS ===== -->
-    <section class="team">
       <div class="container">
-        <div class="team-grid">
-          <div class="member">
-            <img src="images/team1.jpg" alt="Sarah Mitchell, Founder & Head Nutritionist">
-            <h3>Sarah Mitchell</h3>
-            <p>Founder & Head Nutritionist</p>
-          </div>
+        <div class="team-hero-card">
+          <div class="team-hero-icon" aria-hidden="true">✤</div>
+          <h1>Meet Our Team of Experts</h1>
+          <p class="hero-intro">
+            Our team at Nutritionist is composed of highly skilled professionals who are passionate about helping you achieve your
+            health and wellness goals. With a diverse range of expertise in nutrition, coaching, and support, our team provides
+            the personalized care you need to make a positive impact on your journey.
+          </p>
 
-          <div class="member">
-            <img src="images/team2.jpg" alt="Emily Johnson, Senior Dietitian">
-            <h3>Emily Johnson</h3>
-            <p>Senior Dietitian</p>
-          </div>
-
-          <div class="member">
-            <img src="images/team3.jpg" alt="Michael Smith, Nutrition Coach">
-            <h3>Michael Smith</h3>
-            <p>Nutrition Coach</p>
-          </div>
-
-          <div class="member">
-            <img src="images/team4.jpg" alt="Jessica Brown, Fitness Consultant">
-            <h3>Jessica Brown</h3>
-            <p>Fitness Consultant</p>
-          </div>
+          <ul class="team-tabs" role="tablist">
+            <li><button class="pill is-active" data-filter="all" role="tab" aria-selected="true">Management Team</button></li>
+            <li><button class="pill" data-filter="nutrition" role="tab">Nutritionists and Dietitians</button></li>
+            <li><button class="pill" data-filter="support" role="tab">Customer Support</button></li>
+            <li><button class="pill" data-filter="marketing" role="tab">Marketing and Communications</button></li>
+            <li><button class="pill" data-filter="tech" role="tab">Technology and Development</button></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ===== JOIN OUR TEAM ===== -->
-    <section class="join">
+    <!-- Grid -->
+    <section class="team-grid-wrap">
       <div class="container">
-        <h2>Join Our Team</h2>
-        <p>
-          Are you passionate about health, wellness, and making a positive impact? 
-          Nutritionist is always looking for talented individuals who share our mission 
-          to empower people through better nutrition and healthy living.
-        </p>
+        <div class="team-grid" aria-label="Team members">
+          <article class="member-card" data-tags="management">
+            <div class="member-photo">
+              <img src="images/team-sarah-720.jpg" alt="Sarah Mitchell — Founder and CEO" width="720" height="720" loading="lazy">
+            </div>
+            <div class="member-meta">
+              <h3>Sarah Mitchell</h3>
+              <p class="role">Founder and CEO</p>
+            </div>
+          </article>
 
-        <div class="join-grid">
-          <div class="join-card">
-            <h3>Collaborate with Professionals</h3>
-            <p>Work alongside certified experts and contribute to transforming lives.</p>
-          </div>
-          <div class="join-card">
-            <h3>Continuous Learning</h3>
-            <p>Grow your knowledge through workshops, seminars, and mentorship.</p>
-          </div>
-          <div class="join-card">
-            <h3>Supportive Community</h3>
-            <p>Be part of a team that values growth, creativity, and well-being.</p>
-          </div>
+          <article class="member-card" data-tags="management">
+            <div class="member-photo">
+              <img src="images/team-emily-720.jpg" alt="Emily Thompson — Chief Operating Officer" width="720" height="720" loading="lazy">
+            </div>
+            <div class="member-meta">
+              <h3>Emily Thompson</h3>
+              <p class="role">Chief Operating Officer</p>
+            </div>
+          </article>
+
+          <article class="member-card" data-tags="management finance">
+            <div class="member-photo">
+              <img src="images/team-john-720.jpg" alt="John Davis — Chief Financial Officer" width="720" height="720" loading="lazy">
+            </div>
+            <div class="member-meta">
+              <h3>John Davis</h3>
+              <p class="role">Chief Financial Officer</p>
+            </div>
+          </article>
+
+          <article class="member-card" data-tags="management marketing">
+            <div class="member-photo">
+              <img src="images/team-rachel-720.jpg" alt="Rachel Adams — Chief Marketing Officer" width="720" height="720" loading="lazy">
+            </div>
+            <div class="member-meta">
+              <h3>Rachel Adams</h3>
+              <p class="role">Chief Marketing Officer</p>
+            </div>
+          </article>
         </div>
-
-        <a href="#" class="btn">Apply Now</a>
       </div>
     </section>
 
-    <!-- ===== CALL TO ACTION ===== -->
-    <section class="cta">
-      <h3>Book a Personalized Nutrition Demo for Free</h3>
-      <p>Take the first step towards your health transformation. 
-        Connect with our team and discover how we can help you reach your goals.</p>
-      <a href="#" class="btn">Book a Demo</a>
+    <!-- CTA -->
+    <section class="team-cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-copy">
+            <h3>Join Our Team</h3>
+            <p>
+              We’re always on the lookout for talented individuals who are enthusiastic about making a difference.
+              Explore our career opportunities and join us in our mission to help people achieve their health and wellness goals.
+            </p>
+          </div>
+          <a href="#" class="btn btn-primary cta-btn">Apply Now</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <a href="index.html" class="brand">
-          <img src="images/logo.svg" alt="Nutritionist logo" width="140" height="32">
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="#top">
+          <img src="images/logo.svg" alt="Nutritionist" width="140" height="32" />
         </a>
-        <p class="contact-info">
-          <a href="mailto:hello@squareup.com">hello@squareup.com</a><br>
-          <a href="tel:+9191813232309">+91 91813 23 2309</a><br>
-          <span>Somewhere in the World</span>
-        </p>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html" aria-current="page">Team</a></li>
+            <li><a href="index.html#process">Process</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#top" class="go-top" aria-label="Back to top"><span>↑</span></a>
       </div>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+      <div class="footer-bottom">
+        <div class="contact-box">
+          <div class="icon">✉</div>
+          <a href="mailto:hello@squareup.com">hello@squareup.com</a>
+        </div>
+        <div class="contact-box">
+          <div class="icon">📞</div>
+          <a href="tel:+9191813232309">+91 91813 23 2309</a>
+        </div>
+        <div class="contact-box">
+          <div class="icon">📍</div>
+          <span>Somewhere in the World</span>
+        </div>
+        <small>© 2023 Nutritionist. All rights reserved.</small>
+      </div>
     </div>
-    <p class="copyright">© 2023 Nutritionist. All rights reserved.</p>
   </footer>
 
   <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const siteNav = document.getElementById('site-nav');
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', !expanded);
-      siteNav.classList.toggle('open');
+    // mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
     });
+
+    // team filters
+    const pills = document.querySelectorAll('.team-tabs .pill');
+    const cards = document.querySelectorAll('.member-card');
+    pills.forEach(p => p.addEventListener('click', () => {
+      pills.forEach(x => { x.classList.remove('is-active'); x.setAttribute('aria-selected','false'); });
+      p.classList.add('is-active'); p.setAttribute('aria-selected','true');
+      const f = p.dataset.filter;
+      cards.forEach(c => {
+        const tags = c.dataset.tags || '';
+        c.style.display = (f === 'all' || tags.includes(f)) ? '' : 'none';
+      });
+    }));
   </script>
 </body>
 </html>
