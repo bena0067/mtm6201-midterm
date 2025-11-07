@@ -166,3 +166,11 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .team-hero { padding: 6rem 1rem; }
 }
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0; /* rounded top corners */
+  margin-bottom: 1rem;
+  object-fit: cover; /* keeps good proportion */
+}
