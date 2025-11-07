@@ -1,10 +1,13 @@
 
------------------------------------------------------ */
-
-/* RESET & BASE */
 
 
-/* NAV core */
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////* Home-page /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
 .site-header{
    position:sticky; 
    top:0; 
@@ -114,7 +117,7 @@ html{scroll-behavior:smooth}
 
 
 body{
-  font-family:"Urbanist",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background:#FAFDF2; /* g97 */
   color:#333333; /* gy20 */
   line-height:1.6;
@@ -132,7 +135,6 @@ img{max-width:100%;
   margin:-1px;
   border:0;
   padding:0;
-  clip:rect(0 0 0 0);
   overflow:hidden}
 
 
@@ -656,18 +658,6 @@ blockquote{
   margin-bottom:.75rem}
 
 
-.chip{
-  display:inline-block;
-  background:var(--dg20);
-  color:var(--g97);
-  padding:.6rem .9rem;
-  border-radius:.75rem;
-  border:1px solid color-mix(
-    in oklab,var(--g99),
-  transparent 80%)}
-
-
-
 .footer-bar{
   background:var(--dg15);
   color:var(--dg90);
@@ -809,7 +799,7 @@ blockquote{
 }
 
 
-/* ================================
+/* ================================//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    ABOUT PAGE STYLES
 ===================================*/
 
@@ -878,28 +868,38 @@ blockquote{
   background: var(--g99);
   padding: 4rem 0;
 }
+
+
+
 .our-story h2 {
   text-align: center;
   margin-bottom: 0.25rem;
   color: var(--dg15);
 }
+
 .our-story p {
   text-align: center;
   color: var(--gy40);
   margin-bottom: 2.5rem;
+
 }
+
 .story-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .story {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
+
+
+
 .story:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 .story img {
   width: 50%;
@@ -909,19 +909,22 @@ blockquote{
 .story div {
   width: 50%;
 }
+
 .story h3 {
   color: var(--dg15);
   margin-bottom: 0.5rem;
 }
+
 .story p {
   color: var(--gy35);
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
+
 .story time {
   font-size: 0.9rem;
-  color: var(--gy50);
-}
+  color:
+   var(--gy50);}
 @media (max-width: 980px) {
   .story {
     flex-direction: column !important;
@@ -931,15 +934,18 @@ blockquote{
   }
 }
 
+
 /* ----- COMPANY ACHIEVEMENTS ----- */
 .section-head {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
 .section-head h2 {
   margin: 0 0 0.25rem;
   color: var(--dg15);
 }
+
 .section-head .section-eyebrow {
   max-width: 70ch;
   margin: 0.25rem auto 0;
@@ -952,11 +958,15 @@ blockquote{
   background: var(--g99);
   padding: 3.5rem 0 2.5rem;
 }
+
+
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+
+
 .achievement-card {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -991,10 +1001,11 @@ blockquote{
 }
 
 /* ----- CTA SECTION ----- */
+
 .about-cta {
   background: var(--g99);
-  padding: 2.5rem 0 3.5rem;
-}
+  padding: 2.5rem 0 3.5rem;}
+
 .cta-panel {
   position: relative;
   display: grid;
@@ -1026,11 +1037,7 @@ blockquote{
   width: 54px;
   height: 54px;
   border-radius: 14px;
-  background: color-mix(in oklab, var(--g80), white 22%);
-  box-shadow:
-    22px 0 0 0 color-mix(in oklab, var(--g85), white 18%),
-    0 -22px 0 0 color-mix(in oklab, var(--g85), white 18%),
-    22px -22px 0 0 color-mix(in oklab, var(--g90), white 12%);
+ 
 }
 
 /* ----- RESPONSIVE ----- */
