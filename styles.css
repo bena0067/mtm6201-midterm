@@ -184,7 +184,7 @@ blockquote{color:var(--gy35)}
   padding: 2.5rem 0 1rem;
 }
 
-
+.go-top{display:grid;place-items:center;width:36px;height:36px;border-radius:999px;background:var(--dg20);color:var(--g99);text-decoration:none}
 .center-tile {
   grid-column: 3;
   grid-row: 1 / span 2;
