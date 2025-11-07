@@ -690,7 +690,7 @@ blockquote{
 .to-top{
   display:grid;
   place-items:center;
-  width:36px;
+  width:120px;
   height:36px;
   border-radius:999px;
   background:var(--dg20);
