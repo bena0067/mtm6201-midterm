@@ -41,25 +41,25 @@
       <div class="container">
         <div class="team-grid">
           <div class="member">
-            <img src="images/sarah.jpg" alt="Sarah Mitchell, Founder & Head Nutritionist">
+            <img src="images/team1.jpg" alt="Sarah Mitchell, Founder & Head Nutritionist">
             <h3>Sarah Mitchell</h3>
             <p>Founder & Head Nutritionist</p>
           </div>
 
           <div class="member">
-            <img src="images/emily.jpg" alt="Emily Johnson, Senior Dietitian">
+            <img src="images/team2.jpg" alt="Emily Johnson, Senior Dietitian">
             <h3>Emily Johnson</h3>
             <p>Senior Dietitian</p>
           </div>
 
           <div class="member">
-            <img src="images/john.jpg" alt="Michael Smith, Nutrition Coach">
+            <img src="images/team3.jpg" alt="Michael Smith, Nutrition Coach">
             <h3>Michael Smith</h3>
             <p>Nutrition Coach</p>
           </div>
 
           <div class="member">
-            <img src="images/rachel.jpg" alt="Jessica Brown, Fitness Consultant">
+            <img src="images/team4.jpg" alt="Jessica Brown, Fitness Consultant">
             <h3>Jessica Brown</h3>
             <p>Fitness Consultant</p>
           </div>
@@ -105,10 +105,41 @@
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <p>hello@squareup.com | +91 91813 23 2309 | Somewhere in the World</p>
-    <p>© 2023 Nutritionist. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand">
+          <img src="images/logo.svg" alt="Nutritionist logo" width="140" height="32">
+        </a>
+        <p class="contact-info">
+          <a href="mailto:hello@squareup.com">hello@squareup.com</a><br>
+          <a href="tel:+9191813232309">+91 91813 23 2309</a><br>
+          <span>Somewhere in the World</span>
+        </p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">© 2023 Nutritionist. All rights reserved.</p>
   </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !expanded);
+      siteNav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

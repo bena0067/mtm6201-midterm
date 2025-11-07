@@ -147,13 +147,37 @@ a { text-decoration: none; color: inherit; }
 }
 .btn:hover { background: #f1f1f1; }
 
-/* ===== FOOTER ===== */
-.footer {
-  background: #333;
-  color: white;
+/* 7. FOOTER */
+.site-footer {
+  background-color: #1A3129;
+  color: #DDEDE8;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-nav a {
+  color: #DDEDE8;
+  font-weight: 500;
+}
+.footer-nav a:hover {
+  color: #CBEA7B;
+}
+.copyright {
   text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #DDEDE8;
+  font-size: 0.95rem;
 }
 
 /* ===== ANIMATION ===== */
@@ -165,12 +189,4 @@ a { text-decoration: none; color: inherit; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .team-hero { padding: 6rem 1rem; }
-}
-
-.card-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0; /* rounded top corners */
-  margin-bottom: 1rem;
-  object-fit: cover; /* keeps good proportion */
 }

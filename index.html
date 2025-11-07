@@ -1,187 +1,387 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nutritionist - Personalized Nutrition Coaching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutritionist — Personalized Nutrition Coaching</title>
+  <meta name="description" content="Transform your health with personalized nutrition coaching. Tailored plans, certified experts, and flexible pricing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/home.css" />
-  <link rel="icon" href="images/logo.png" />
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    <div class="container">
+      <p>Join Our Personalized Nutrition Demo For Free →</p>
+    </div>
+  </div>
 
   <!-- Header -->
-  <header class="header">
-    <div class="logo">Nutritionist</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="#">Process</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Nutritionist logo" width="140" height="32">
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-nav">Contact Us</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
   <main id="main">
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-content">
-        <h1>Transform Your <span>Health</span> with Personalized Nutrition Coaching</h1>
-        <p>Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching.</p>
-        <div class="hero-buttons">
-          <a href="#" class="btn primary">Get Started Today</a>
-          <a href="#" class="btn secondary">Book a Demo</a>
+      <div class="container hero-grid">
+        <div class="hero-image">       
+           <img src="images/head image.png" alt="">
+          <div class="img-placeholder" aria-hidden="true"></div>
+          
         </div>
-        <p class="subtext">430+ Happy Customers</p>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-      <h2>Our Features</h2>
-      <p>Discover how Nutritionist helps you achieve your goals.</p>
-
-      <div class="feature-grid">
-        <div class="card">
-          <img src="" alt="">
-            <img src="im" alt="">
-          <h3>Personalized Nutrition Plans</h3>
-          <p>Receive a tailored nutrition plan designed for your body and goals with support from certified nutritionists.</p>
-        </div>
-
-        <div class="card">
-          <img src="" alt="">
-          <h3>Guidance from Certified Nutritionists</h3>
-          <p>Get professional support and motivation throughout your journey to better health.</p>
-        </div>
-
-        <div class="card">
-          <img src="" alt="">
-          <h3>Food Tracking & Analysis</h3>
-          <p>Use our easy-to-track tools to analyze your food intake and receive actionable insights.</p>
-        </div>
-
-        <div class="card">
-          <img src="" alt="">
-          <h3>Meal Planning & Recipes</h3>
-          <p>Enjoy delicious and balanced meal ideas created for your dietary preferences.</p>
-        </div>
-
-        <div class="card">
-          <img src="" alt="">
-          <h3>Lifestyle & Behavior Coaching</h3>
-          <p>Build sustainable habits with our experts guiding you every step of the way.</p>
-        </div>
-
-        <div class="card">
-          <img src="" alt="">
-          <h3>Nutritional Education & Workshops</h3>
-          <p>Learn from informative workshops and resources to support long-term success.</p>
+        <div class="hero-content">
+          <p class="eyebrow">Transform Your ❤️ Health with</p>
+          <h1>Personalized Nutrition<br> Coaching</h1>
+          <p class="lead">
+            Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching.
+            Our certified nutritionists provide tailored plans and ongoing support for your journey.
+          </p>
+          <div class="hero-actions">
+            <a href="#get-started" class="btn btn-primary">Get Starter Today</a>
+            <a href="#demo" class="btn btn-outline">Book a Demo</a>
+          </div>
+          <div class="customers">
+            <!-- <img src="images/avatar-1.jpg" alt="" width="40" height="40">
+            <img src="images/avatar-2.jpg" alt="" width="40" height="40">
+            <img src="images/avatar-3.jpg" alt="" width="40" height="40"> -->
+            <span>430+ Happy Customers</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Blog Section -->
-    <section class="blog">
-      <img src="" alt="">
-      <h2>Our Blogs</h2>
-      <div class="blog-grid">
-        <article class="blog-post">
-          <h3>The Benefits of Hydration for Weight Loss</h3>
-          <p>Discover how staying hydrated can support your weight loss goals and improve overall health.</p>
-          <p class="author">By Emily Johnson • 23 May 2023 • 5 min read</p>
-        </article>
+    <!-- FEATURES -->
+    <section class="features" aria-labelledby="features-heading">
+      <div class="container">
+        <h2 id="features-heading">Features</h2>
+        <p class="section-intro">Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and wellness.</p>
 
-        <article class="blog-post">
-          <img src="" alt="">
-          <h3>Understanding Macronutrients</h3>
-          <p>Get a comprehensive understanding of carbs, proteins, and fats for optimal health.</p>
-          <p class="author">By Mark Wilson • 23 May 2023 • 5 min read</p>
-        </article>
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🌿</div>
+            <div>
+              <h3>Personalized Nutrition Plans</h3>
+              <p>Receive a tailored nutrition plan designed specifically for your body and goals.</p>
+            </div>
+          </article>
 
-        <article class="blog-post">
-          <img src="" alt="">
-          <h3>Mindful Eating</h3>
-          <p>Learn how mindful eating can help you develop a healthy relationship with food.</p>
-          <p class="author">By Sarah Thompson • 23 May 2023 • 5 min read</p>
-        </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🎓</div>
+            <div>
+              <h3>Guidance from Certified Nutritionists</h3>
+              <p>Get professional guidance and support throughout your journey.</p>
+            </div>
+          </article>
 
-        <article class="blog-post">
-          <img src="" alt="">
-          <h3>Healthy Snacks on the Go</h3>
-          <p>Explore convenient and nutritious snack ideas to stay fueled throughout the day.</p>
-          <p class="author">By Emily Johnson • 23 May 2023 • 5 min read</p>
-        </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🍽</div>
+            <div>
+              <h3>Food Tracking and Analysis</h3>
+              <p>Track intake with our app and receive insights for improvement.</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📒</div>
+            <div>
+              <h3>Meal Planning and Recipes</h3>
+              <p>Access delicious and healthy recipes tailored to your needs.</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">💪</div>
+            <div>
+              <h3>Lifestyle and Behavior Coaching</h3>
+              <p>Build sustainable habits and overcome obstacles with support.</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🧠</div>
+            <div>
+              <h3>Nutritional Education and Workshops</h3>
+              <p>Learn through informative articles and interactive workshops.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonials-grid">
-        <blockquote>
-          <p>"I can't thank Nutritionist enough for their personalized coaching. It has completely transformed my approach to food!"</p>
-          <cite>- Jennifer Anderson</cite>
-        </blockquote>
-        <blockquote>
-          <p>"The expert guidance I received made my weight loss journey so much easier. Thank you!"</p>
-          <cite>- Robert Johnson</cite>
-        </blockquote>
-        <blockquote>
-          <p>"Their personalized approach made all the difference. I've never felt better!"</p>
-          <cite>- Emily Davis</cite>
-        </blockquote>
+    <!-- BLOGS -->
+    <section id="blog" class="blogs" aria-labelledby="blogs-heading">
+      <div class="container">
+        <h2 id="blogs-heading">Our Blogs</h2>
+        <p class="section-intro">Our blog is a treasure house of informative and engaging articles written by our team of nutritionists, dietitians, and wellness experts.</p>
+
+        <div class="blog-grid">
+          <!-- Card 1 -->
+          <article class="blog-card">
+            <div class="blog-media">
+              <!-- <img src="images/blog-hydration-960.jpg" alt="Woman drinking water"> -->
+              <div class="img-placeholder" aria-hidden="true"></div>
+            </div>
+            <div class="blog-body">
+              <span class="badge">Weight Loss</span>
+              <h3 class="blog-title">The Benefits of Hydration for Weight Loss</h3>
+              <p class="blog-excerpt">Discover how staying hydrated can support your weight loss goals and improve overall health.</p>
+              <div class="blog-meta">
+                <div class="author">
+                  <!-- <img src="images/author-emily.jpg" alt="Emily Johnson" width="28" height="28"> -->
+                  <span>Emily Johnson</span>
+                </div>
+                <div class="meta-right">
+                  <time datetime="2023-05-23">23 May 2023</time> · <span>5 min read</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="blog-card">
+            <div class="blog-media">
+              <!-- <img src="images/blog-mindful-960.jpg" alt="Girl with apple and burger"> -->
+              <div class="img-placeholder" aria-hidden="true"></div>
+            </div>
+            <div class="blog-body">
+              <span class="badge">Mindful Eating</span>
+              <h3 class="blog-title">Cultivating a Healthy Relationship with Food</h3>
+              <p class="blog-excerpt">Learn how mindful eating can help you build a healthier relationship with food.</p>
+              <div class="blog-meta">
+                <div class="author">
+                  <!-- <img src="images/author-sarah.jpg" alt="Sarah Thompson" width="28" height="28"> -->
+                  <span>Sarah Thompson</span>
+                </div>
+                <div class="meta-right">
+                  <time datetime="2023-05-23">23 May 2023</time> · <span>5 min read</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="blog-card">
+            <div class="blog-media">
+              <!-- <img src="images/blog-macros-960.jpg" alt="Two women with food choices"> -->
+              <div class="img-placeholder" aria-hidden="true"></div>
+            </div>
+            <div class="blog-body">
+              <span class="badge">Understanding Macronutrients</span>
+              <h3 class="blog-title">Carbohydrates, Proteins, and Fats</h3>
+              <p class="blog-excerpt">Get a comprehensive understanding of macronutrients and their role in your diet.</p>
+              <div class="blog-meta">
+                <div class="author">
+                  <!-- <img src="images/author-mark.jpg" alt="Mark Wilson" width="28" height="28"> -->
+                  <span>Mark Wilson</span>
+                </div>
+                <div class="meta-right">
+                  <time datetime="2023-05-23">23 May 2023</time> · <span>5 min read</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="blog-card">
+            <div class="blog-media">
+              <!-- <img src="images/blog-snacks-960.jpg" alt="Healthy and unhealthy snacks top view"> -->
+              <div class="img-placeholder" aria-hidden="true"></div>
+            </div>
+            <div class="blog-body">
+              <span class="badge">Healthy Snacks on the Go</span>
+              <h3 class="blog-title">Quick and Nutritious Options</h3>
+              <p class="blog-excerpt">Explore convenient and healthy snack ideas to keep you fueled throughout the day.</p>
+              <div class="blog-meta">
+                <div class="author">
+                  <!-- <img src="images/author-emily.jpg" alt="Emily Johnson" width="28" height="28"> -->
+                  <span>Emily Johnson</span>
+                </div>
+                <div class="meta-right">
+                  <time datetime="2023-05-23">23 May 2023</time> · <span>5 min read</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="pricing">
-      <h2>Our Pricing Plans</h2>
-      <p>Flexible and affordable options to support your journey to better health.</p>
-      <div class="pricing-grid">
-        <div class="plan">
-          <h3>Basic Plan</h3>
-          <p>$49 /month</p>
-          <ul>
-            <li>Personalized coaching</li>
-            <li>Meal planning</li>
-            <li>Email support</li>
-          </ul>
-          <a href="#" class="btn">Choose Plan</a>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">Our Testimonials</h2>
+        <p class="section-intro">Our satisfied clients share their success stories and experiences on their journey to better health and well-being.</p>
+
+        <div class="testimony-grid">
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>
+              I can't thank Nutritionist enough for their personalized nutrition coaching. It completely transformed my approach to food and helped me shed those extra pounds.
+            </blockquote>
+            <figcaption class="quote-author">
+              <!-- <img src="images/author-jennifer.jpg" alt="Jennifer Anderson" width="32" height="32"> -->
+              <span>Jennifer Anderson</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>
+              Nutritionist has been a game-changer for me. The expert guidance and support I received made my weight loss journey so much easier. Thank you!
+            </blockquote>
+            <figcaption class="quote-author">
+              <!-- <img src="images/author-robert.jpg" alt="Robert Johnson" width="32" height="32"> -->
+              <span>Robert Johnson</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>
+              I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored plan made all the difference. I've never felt better!
+            </blockquote>
+            <figcaption class="quote-author">
+              <!-- <img src="images/author-emily-davis.jpg" alt="Emily Davis" width="32" height="32"> -->
+              <span>Emily Davis</span>
+            </figcaption>
+          </figure>
         </div>
 
-        <div class="plan highlight">
-          <h3>Premium Plan</h3>
-          <p>$79 /month</p>
-          <ul>
-            <li>Everything in Basic</li>
-            <li>Video consultations</li>
-            <li>Priority support</li>
-          </ul>
-          <a href="#" class="btn">Choose Plan</a>
+        <div class="slider-dots" aria-hidden="true">
+          <button class="dot prev" aria-label="Previous">‹</button>
+          <span class="dot is-active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <button class="dot next" aria-label="Next">›</button>
         </div>
+      </div>
+    </section>
 
-        <div class="plan">
-          <h3>Ultimate Plan</h3>
-          <p>$99 /month</p>
-          <ul>
-            <li>All Premium features</li>
-            <li>24/7 chat support</li>
-            <li>Exclusive workshops</li>
-          </ul>
-          <a href="#" class="btn">Choose Plan</a>
+    <!-- PRICING -->
+    <section id="pricing" class="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <h2 id="pricing-heading">Our Pricing</h2>
+        <p class="section-intro">
+          We outline our flexible and affordable options to support you on your journey to optimal health and nutrition.
+        </p>
+
+        <fieldset class="billing-switch" aria-label="Billing period">
+          <legend class="visually-hidden">Choose billing</legend>
+          <label class="switch"><input type="radio" name="billing" value="monthly" checked><span>Monthly</span></label>
+          <label class="switch"><input type="radio" name="billing" value="yearly"><span>Yearly</span></label>
+          <div class="save-tip">Save 50% on Yearly</div>
+        </fieldset>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Basic Plan</h3>
+            <p class="sub">Up to 50% off on Yearly Plan</p>
+            <p class="copy">Get started on your health journey with our Basic Plan: personalized coaching, app access, meal planning, and email support.</p>
+            <p class="price">
+              <span class="amount" data-monthly="$49" data-yearly="$24">$49</span><span class="per">/month</span>
+            </p>
+            <a href="#" class="btn btn-primary btn-block">Choose Plan</a>
+          </article>
+
+          <article class="price-card featured" aria-label="Premium plan, most popular">
+            <div class="badge">Most Popular</div>
+            <h3>Premium Plan</h3>
+            <p class="sub">Up to 50% off on Yearly Plan</p>
+            <p class="copy">Upgrade to Premium for video consultations, priority support, and personalized recipe recommendations.</p>
+            <p class="price">
+              <span class="amount" data-monthly="$79" data-yearly="$39">$79</span><span class="per">/month</span>
+            </p>
+            <a href="#" class="btn btn-primary btn-block">Choose Plan</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Ultimate Plan</h3>
+            <p class="sub">Up to 50% off on Yearly Plan</p>
+            <p class="copy">Experience the full benefits of personalized coaching with 24/7 chat support and exclusive workshops.</p>
+            <p class="price">
+              <span class="amount" data-monthly="$99" data-yearly="$49">$99</span><span class="per">/month</span>
+            </p>
+            <a href="#" class="btn btn-primary btn-block">Choose Plan</a>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>hello@squareup.com | +91 91813 23 2309 | Somewhere in the World</p>
-    <p>© 2023 Nutritionist. All rights reserved.</p>
+  <!-- FOOTER -->
+ 
+
+    <div class="footer-bar">
+      <div class="container footer-grid">
+        <a href="index.html" class="brand">
+          <img src="images/logo.svg" alt="Nutritionist" width="140" height="32" />
+        </a>
+
+ <footer class="site-footer" role="contentinfo">
+    <div class="container footer-contact">
+      <a class="chip" href="mailto:hello@squareup.com">✉ hello@squareup.com</a>
+      <a class="chip" href="tel:+9191813232309">📞 +91 91813 23 2309</a>
+      <span class="chip"> Algonquin College</span>
+    </div>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#top" class="to-top" aria-label="Go to top">↑</a>
+      </div>
+      <div class="container copyline">© 2023 Nutritionist. All rights reserved.</div>
+    </div>
   </footer>
+
+  <script>
+    // Mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      siteNav.classList.toggle('open');
+    });
+
+    // Pricing switch
+    const radios = document.querySelectorAll('input[name="billing"]');
+    const amounts = document.querySelectorAll('.amount');
+    radios.forEach(r => r.addEventListener('change', () => {
+      const yearly = document.querySelector('input[value="yearly"]').checked;
+      amounts.forEach(a => a.textContent = yearly ? a.dataset.yearly : a.dataset.monthly);
+    }));
+  </script>
 </body>
 </html>
