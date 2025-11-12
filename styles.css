@@ -7,13 +7,6 @@
 
 
 
-
-.site-header{
-   position:sticky; 
-   top:0; 
-   z-index:1000; }
-
-
 .header-inner{ 
   display:grid; 
   grid-template-columns:auto 1fr;
@@ -69,19 +62,7 @@
 
   .nav-toggle{ 
     display:inline-block; }
-  .site-nav{
-    position:fixed; 
-    left:0; 
-    right:0; 
-    top:64px;
-    background:#fff; 
-    border-bottom:1px solid #e6e6e6;
-    transform:translateY(-140%); 
-    transition:transform .3s ease;
-    display:block; 
-    padding:1rem; 
-    z-index:999;
-  }
+
 
   .site-nav.open{ 
     transform:none; }
@@ -95,7 +76,7 @@
       margin-top:.5rem; }
 }
 
-/* ////////////////////////////////Force reset for desktop so menu never stays hidden */
+/* ////////////////////////////////Force reset the desktop so menu never stays hidden */
 
 
 @media (min-width: 981px){
@@ -113,13 +94,9 @@
   padding:0}
 
 
-html{scroll-behavior:smooth}
-
-
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background:#FAFDF2; /* g97 */
-  color:#333333; /* gy20 */
+  background:#FAFDF2;
   line-height:1.6;
 }
 
@@ -128,29 +105,6 @@ img{max-width:100%;
   display:block}
 
 
-.visually-hidden{
-  position:absolute!important;
-  width:1px;
-  height:1px;
-  margin:-1px;
-  border:0;
-  padding:0;
-  overflow:hidden}
-
-
-.skip-link{
-  position:absolute;
-  left:0;
-  top:-40px;
-  background:#1A3129;
-  color:#FAFDF2;
-  padding:.5rem 1rem;
-  border-radius:.5rem;
-  z-index:999}
-
-
-.skip-link:focus{
-  top:10px}
 
 /* COLORS //////////////////////////////////////////////////////////////(from Template Guide) */
 :root{
@@ -298,14 +252,7 @@ h2{
   border-radius:1.5rem;
   padding:3rem 2rem}
 
-
-.hero-image{
-  position:relative;
-  height:100%;
-  min-height:520px;
-  border-radius:1rem;
   
-  overflow:hidden}
 
 
 .hero-image .img-placeholder{
@@ -382,16 +329,14 @@ h2{
 
 
 .feature-icon{
-  width:48px;
-  height:48px;
+  width:50px;
+  height:50px;
   display:grid;
   place-items:center;
   background:var(--g70);
   color:var(--dg15);
   border-radius:10px;
   font-weight:800}
-
-
 
 
 /* BLOGS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -409,23 +354,10 @@ h2{
 .blog-card{
   background:#fff;
   border:1px solid var(--gy90);
-  border-radius:16px;
-  overflow:hidden;
+  border-radius:20px;
   display:flex;
   flex-direction:column}
 
-
-.blog-media{
-  aspect-ratio:16/10;
-  background:var(--g90)}
-
-
-
-.blog-media .img-placeholder{
-  width:100%;
-  height:100%;
-  background:linear-gradient(
-    0deg,var(--g90),var(--g95))}
 
 
 .blog-body{
@@ -434,9 +366,9 @@ h2{
 
 .badge{
   display:inline-block;
-  background:var(--g95);
+  background:rgb(252, 255, 230);
   border:1px solid var(--g85);
-  color:var(--dg25);
+  color:black;
   padding:.25rem .6rem;
   border-radius:999px;
   font-size:.9rem;
@@ -445,13 +377,12 @@ h2{
 
 
 .blog-title{
-  font-size:1.25rem;
-  line-height:1.3;
+  font-size:1.30rem;
+  line-height:1.5;
   margin:0 0 .4rem}
 
 
 .blog-excerpt{
-  color:var(--gy35);
   margin-bottom:1rem}
 
 
@@ -470,19 +401,16 @@ h2{
   display:flex;
   align-items:center;
   gap:.5rem;
-  color:var(--dg15);
-  font-weight:600}
+  color:black;
+  font-weight:700}
 
 
-.blog-meta .meta-right{
-  color:var(--gy60);
-  font-size:.95rem}
 
+  
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////TESTIMONIALS */
 
-.testimonials{
-  padding:2rem 0 6rem}
+
 
 
 .testimony-grid{
@@ -493,9 +421,9 @@ h2{
 
 
 .quote-card{
-  background:var(--g97);
-  border:1px solid var(--g90);
-  border-radius:12px;
+  background:rgb(251, 255, 221);
+  border:1px solid rgb(251, 255, 217);
+  border-radius:15px;
   padding:1.25rem;
   display:flex;
   flex-direction:column;
@@ -503,24 +431,20 @@ h2{
 
 
 .quote-mark{
-  color:var(--dg25);
-  font-size:2rem;
+  color:black;
+  font-size:3rem;
   line-height:1}
 
-
-
-blockquote{
-  color:var(--gy35)}
 
 
 .quote-author{
   display:flex;
   align-items:center;
-  gap:.5rem;
+  gap:.4rem;
   background:var(--g95);
   border:1px solid var(--g90);
   border-radius:10px;
-  padding:.6rem .8rem}
+  }
 
 
 .slider-dots{
@@ -625,10 +549,6 @@ blockquote{
   border-color:var(--dg60)}
 
 
-.sub{color:var(--gy35)}
-
-.copy{color:var(--gy35)}
-
 .price{
   font-weight:800;
   color:var(--dg15);
@@ -642,7 +562,8 @@ blockquote{
 .btn-block{
   display:block;
   text-align:center;
-  margin-top:.25rem}
+  margin-top:.25rem
+}
 
 
 /* FOOTER//////////////////////////////////////////////////////////////////////////////////////////////////////; */
@@ -655,7 +576,7 @@ blockquote{
   gap:.75rem;
   flex-wrap:wrap;
   justify-content:center;
-  margin-bottom:.75rem}
+  margin-bottom:.70rem}
 
 
 .footer-bar{
@@ -694,8 +615,7 @@ blockquote{
   height:36px;
   border-radius:999px;
   background:var(--dg20);
-  color:var(--g99);
-  text-decoration:none}
+  color:var(--g99);}
 
 
 .copyline{
@@ -719,10 +639,6 @@ blockquote{
   outline-offset:2px}
 
 
-@media (
-  prefers-reduced-motion:reduce){*{
-    animation:none!important;
-    transition:none!important}}
 
 
 
@@ -792,11 +708,8 @@ blockquote{
 
   .btn{
     padding:.75rem 1rem}
+  }
 
-
-  .hero-grid{
-    padding:2rem 1.25rem}
-}
 
 
 /* ================================//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -901,6 +814,7 @@ blockquote{
 .story:nth-child(even) {
   flex-direction: row;
 }
+
 .story img {
   width: 50%;
   border-radius: 12px;
